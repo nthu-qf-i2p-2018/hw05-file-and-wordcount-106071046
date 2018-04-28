@@ -17,7 +17,7 @@ def main(filename):
     for word in words:
             word = word.strip(string.punctuation)
             word = word.strip()
-            if word:
+            if word !='':
                 all_words.append(word)
                 
     from collections import Counter
