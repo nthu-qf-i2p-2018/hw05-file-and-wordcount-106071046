@@ -14,12 +14,18 @@ def main(filename):
     txtfile = open(filename)
     lines = txtfile.readlines()
     all_words = []
-    for word in words:
+    
+    for line in lines:
+        words = line.split()
+    
+    
+        for word in words:
             word = word.strip(string.punctuation)
             word = word.strip()
             if word !='':
                 all_words.append(word)
-                
+            else:
+                countinue
     from collections import Counter
     counter = Counter(all_words)
     with open("wordcount.csv", "w") as csv_file:
