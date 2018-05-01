@@ -25,7 +25,7 @@ def main(filename):
             if word !='':
                 all_words.append(word)
             else:
-                countinue
+                continue
     from collections import Counter
     counter = Counter(all_words)
     with open("wordcount.csv", "w") as csv_file:
